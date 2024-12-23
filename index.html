@@ -40,7 +40,7 @@
                     <li><a href="#"><i class="bi bi-search">Search</i></a></li>  
                     <li><a href="#"><i class="bi bi-person">Profile</i></a></li>
                     <li><a href="#"><i class="bi bi-cart">Cart</i></a></li>
-                    <li><a href="#">COLLAPSE</a></li>
+                    <li onclick= hideSidebar()><a href="#">COLLAPSE</a></li>
                 </ul>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -202,6 +202,11 @@
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
         }
     </script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> -->
