@@ -1,3 +1,132 @@
 *{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: cornsilk;
+    font-family: 'Quicksand';
     
 }
+
+
+/* NAVIGATION BAR */
+nav{
+    background-color:black;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    /* color: aliceblue; */
+    /* display: flex; */
+    height: 150px;
+}
+
+/* nav #logo img{
+    margin-right: auto;
+    height: 100px;
+} */
+
+nav .navlinks h1 a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-family: 'MonteCarlo';
+    font-size: 50px;
+    padding-left: 30px;;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+nav .navlinks li{
+    height: 50px;
+}
+
+
+nav .navlinks li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: bisque;
+}
+
+
+nav .navlinks li a:hover{
+    transition: .5s;
+    color: burlywood;
+}
+
+
+nav .navlinks li a:first-child{
+    margin-right: auto;
+}
+
+nav .navlinks .sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* HOME PAGE */
+#shop{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#shop img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 100vh;
+    margin: 30px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+
+#shop img:hover{
+    transform: translateY(-20px);
+}
+
+
+#shop .shop-btn{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    padding: 20px 30px;
+    margin: 30px;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    background-color: goldenrod;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#shop .shop-btn:hover{
+    background-color: burlywood;
+    transform: translateY(-10px);
+}
+
+/* FOOTER  */
